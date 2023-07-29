@@ -9,12 +9,14 @@ public class Pessoa {
     private String cpf;
     private List<Endereco> enderecos;
 
+    private String telefone;
 
-    public Pessoa(String nome, int idade, String cpf, List<Endereco> enderecos) {
+    public Pessoa(String nome, int idade, String cpf, List<Endereco> enderecos, String telefone) {
         this.nome = nome;
         this.idade = idade;
         this.cpf = cpf;
         this.enderecos = enderecos;
+        this.telefone = telefone;
     }
 
     public Pessoa(){}
@@ -49,5 +51,13 @@ public class Pessoa {
 
     public void setEnderecos(List<Endereco> enderecos) {
         this.enderecos = enderecos;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }
